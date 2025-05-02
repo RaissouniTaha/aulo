@@ -1,0 +1,328 @@
+{
+  "agencyName": "Government Urban Agency",
+  "agencyTagline": "Official Website",
+  "navigation": "Navigation",
+
+  "header": {
+    "contactUs": "Contact Us",
+    "search": "Search",
+    "searchPlaceholder": "Search the website...",
+    "language": "Language",
+    "login": "Login",
+    "myAccount": "My Account",
+    "eServices": "E-Services",
+    "openMenu": "Open Menu",
+    "closeMenu": "Close Menu"
+  },
+
+  "footer": {
+    "quickLinks": "Quick Links",
+    "contactInfo": "Contact Information",
+    "socialMedia": "Follow Us",
+    "newsletter": "Subscribe to our Newsletter",
+    "newsletterPlaceholder": "Enter your email",
+    "subscribe": "Subscribe",
+    "copyright": "© 2023 Government Urban Agency. All Rights Reserved.",
+    "termsOfUse": "Terms of Use",
+    "privacyPolicy": "Privacy Policy",
+    "accessibility": "Accessibility",
+    "sitemap": "Sitemap",
+    "contactUs": "Contact Us",
+    "address": "123 Government Street, Capital City, 10001",
+    "phoneNumber": "+1 (234) 567-8900",
+    "email": "contact@govagency.gov",
+    "workingHours": "Mon-Fri: 8:30AM - 4:30PM"
+  },
+
+  "home": {
+    "defaultTitle": "Government Urban Agency - Official Website",
+    "defaultDescription": "The official website of the Government Urban Agency, dedicated to urban planning, development control, and sustainable growth.",
+    "hero": {
+      "title": "Urban Planning for Sustainable Communities",
+      "subtitle": "Building better cities through strategic planning, development control, and sustainable urban initiatives"
+    },
+    "quickAccess": {
+      "title": "Quick Access",
+      "documentRequests": "Document Requests",
+      "documentRequestsDesc": "Apply for planning permits and documents",
+      "zoningMaps": "Zoning Maps",
+      "zoningMapsDesc": "View urban zoning and planning maps",
+      "appointments": "Appointments",
+      "appointmentsDesc": "Schedule meetings with our departments",
+      "faq": "FAQ",
+      "faqDesc": "Find answers to common questions",
+      "learnMore": "Learn More",
+      "viewMaps": "View Maps",
+      "bookNow": "Book Now",
+      "viewFaq": "View FAQ"
+    },
+    "about": {
+      "title": "About Our Agency",
+      "content": "The Government Urban Agency is responsible for implementing the national urban planning policy, developing urban plans, and regulating construction and development activities across the country.",
+      "mission": "Our mission is to ensure sustainable urban development, improve the quality of life in our cities, and preserve our architectural and cultural heritage.",
+      "features": {
+        "urbanPlanning": "Urban Planning",
+        "developmentControl": "Development Control",
+        "technicalSupport": "Technical Support",
+        "projectManagement": "Project Management"
+      },
+      "yearsExperience": "Years of Excellence",
+      "learnMore": "Learn More About Us"
+    },
+    "services": {
+      "title": "Our Services",
+      "subtitle": "We provide a wide range of services to support urban development, construction, and planning across the country.",
+      "viewAll": "View All Services",
+      "viewDetails": "View Details",
+      "learnMore": "Learn More"
+    },
+    "statistics": {
+      "urbanProjects": "Urban Projects",
+      "buildingPermits": "Building Permits",
+      "municipalities": "Municipalities",
+      "masterPlans": "Master Plans" 
+    },
+    "latestNews": {
+      "title": "Latest News",
+      "subtitle": "Stay updated with the latest news and announcements from our agency",
+      "readMore": "Read More",
+      "viewAllNews": "View All News",
+      "noNews": "No news articles available at the moment"
+    },
+    "announcements": {
+      "title": "Important Announcements",
+      "viewAll": "View All"
+    },
+    "spatialData": {
+      "title": "Urban Planning Map",
+      "subtitle": "Explore zoning regulations, development projects, and urban plans"
+    },
+    "cta": {
+      "defaultTitle": "Need Assistance with Urban Planning?",
+      "defaultDescription": "Our specialists are available to help with all your urban planning and development needs.",
+      "contactUs": "Contact Us",
+      "services": "View Services"
+    }
+  },
+
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "tryAgain": "Try Again",
+    "viewAll": "View All",
+    "viewAllNews": "View All News",
+    "readMore": "Read More",
+    "learnMore": "Learn More",
+    "downloadNow": "Download Now",
+    "applyNow": "Apply Now",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "search": "Search",
+    "filter": "Filter",
+    "sortBy": "Sort By",
+    "results": "Results",
+    "noResults": "No results found",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "page": "Page",
+    "of": "of",
+    "viewMore": "View More",
+    "showMore": "Show More",
+    "showLess": "Show Less",
+    "all": "All",
+    "date": "Date",
+    "category": "Category",
+    "categories": "Categories",
+    "title": "Title",
+    "description": "Description",
+    "status": "Status",
+    "actions": "Actions",
+    "details": "Details",
+    "edit": "Edit",
+    "delete": "Delete",
+    "save": "Save",
+    "saved": "Saved",
+    "close": "Close",
+    "confirm": "Confirm",
+    "continue": "Continue",
+    "required": "Required",
+    "optional": "Optional",
+    "success": "Success",
+    "error": "Error",
+    "warning": "Warning",
+    "info": "Information",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Address",
+    "message": "Message",
+    "subject": "Subject",
+    "fileName": "File Name",
+    "fileSize": "File Size",
+    "fileType": "File Type",
+    "download": "Download",
+    "share": "Share",
+    "print": "Print",
+    "upload": "Upload",
+    "browse": "Browse",
+    "dragAndDrop": "Drag and drop files here",
+    "or": "or",
+    "attachments": "Attachments",
+    "relatedDocuments": "Related Documents",
+    "publishedOn": "Published on",
+    "lastUpdate": "Last update",
+    "yes": "Yes",
+    "no": "No"
+  },
+
+  "breadcrumbs": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "news": "News",
+    "events": "Events",
+    "projects": "Projects",
+    "documents": "Documents",
+    "regulations": "Regulations",
+    "maps": "Maps",
+    "contact": "Contact"
+  },
+
+  "search": {
+    "title": "Search Results",
+    "placeholder": "Search the website...",
+    "button": "Search",
+    "resultsFound": "{{count}} result found",
+    "resultsFound_plural": "{{count}} results found",
+    "noResults": "No results found for \"{{query}}\"",
+    "tryAgain": "Please try with different keywords or browse our sitemap",
+    "inCategory": "in",
+    "advancedSearch": "Advanced Search",
+    "allCategories": "All Categories",
+    "filterByType": "Filter by Type",
+    "filterByDate": "Filter by Date",
+    "sortBy": {
+      "relevance": "Relevance",
+      "date": "Date (Newest)",
+      "dateAsc": "Date (Oldest)",
+      "title": "Title (A-Z)",
+      "titleDesc": "Title (Z-A)"
+    },
+    "documentTypes": {
+      "all": "All Documents",
+      "forms": "Forms",
+      "publications": "Publications",
+      "regulations": "Regulations",
+      "plans": "Plans",
+      "reports": "Reports",
+      "guidelines": "Guidelines"
+    }
+  },
+
+  "error": {
+    "404": {
+      "title": "Page Not Found",
+      "description": "Sorry, the page you are looking for does not exist or has been moved.",
+      "backHome": "Back to Homepage"
+    },
+    "500": {
+      "title": "Server Error",
+      "description": "Sorry, something went wrong on our server. Please try again later.",
+      "backHome": "Back to Homepage"
+    },
+    "403": {
+      "title": "Access Denied",
+      "description": "Sorry, you don't have permission to access this page.",
+      "backHome": "Back to Homepage"
+    },
+    "offline": {
+      "title": "No Internet Connection",
+      "description": "You are currently offline. Please check your connection and try again.",
+      "retry": "Retry"
+    }
+  },
+
+  "maps": {
+    "title": "Interactive Maps",
+    "searchPlaceholder": "Search for locations, zones...",
+    "legend": "Legend",
+    "legendHelp": "Colors and symbols used on the map",
+    "layers": "Map Layers",
+    "loading": "Loading map data...",
+    "loadingFeature": "Loading details...",
+    "loadError": "Unable to load map data",
+    "featureLoadError": "Unable to load feature details",
+    "noData": "No data available for this area",
+    "zoneTypes": {
+      "residential": "Residential Zone",
+      "commercial": "Commercial Zone",
+      "industrial": "Industrial Zone",
+      "mixedUse": "Mixed-Use Zone",
+      "green": "Green Space",
+      "public": "Public Facilities",
+      "protected": "Protected Area",
+      "agricultural": "Agricultural Land"
+    },
+    "featureInfo": {
+      "title": "Area Information",
+      "zoneType": "Zone Type",
+      "area": "Area",
+      "perimeter": "Perimeter",
+      "regulations": "Regulations",
+      "documents": "Related Documents",
+      "projects": "Projects in this Area",
+      "status": "Status",
+      "approvedDate": "Approved Date",
+      "expiryDate": "Expiry Date",
+      "moreInfo": "More Information"
+    },
+    "controls": {
+      "zoomIn": "Zoom In",
+      "zoomOut": "Zoom Out",
+      "resetView": "Reset View",
+      "fullScreen": "Full Screen"
+    },
+    "exportMap": "Export Map",
+    "printMap": "Print Map",
+    "enterFullscreen": "Enter Fullscreen",
+    "exitFullscreen": "Exit Fullscreen",
+    "printTitle": "Urban Planning Map",
+    "printDate": "Date",
+    "printDisclaimer": "This map is provided for informational purposes only. For official zoning information, please contact the Urban Agency."
+  },
+
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "We're here to help and answer any questions you might have",
+    "form": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "subject": "Subject",
+      "message": "Your Message",
+      "submitButton": "Send Message",
+      "successMessage": "Your message has been sent successfully. We will get back to you soon.",
+      "errorMessage": "There was an error sending your message. Please try again."
+    },
+    "info": {
+      "title": "Contact Information",
+      "address": "123 Government Street, Capital City, 10001",
+      "phone": "+1 (234) 567-8900",
+      "email": "contact@govagency.gov",
+      "workingHours": "Working Hours",
+      "workingHoursTimes": "Monday to Friday, 8:30AM - 4:30PM",
+      "closedDays": "Closed on weekends and public holidays"
+    },
+    "locations": {
+      "title": "Our Offices",
+      "headquarters": "Headquarters",
+      "regionalOffices": "Regional Offices",
+      "viewOnMap": "View on Map"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "viewAll": "View All FAQs"
+    }
+  }
+}
