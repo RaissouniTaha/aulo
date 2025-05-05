@@ -100,9 +100,16 @@ function NewsForm() {
   async function onSubmit(data: z.infer<typeof newsFormSchema>) {
     setIsSubmitting(true);
     try {
+      // Ensure publishDate is sent as a proper ISO date string
+      const formattedData = {
+        ...data,
+        // Convert Date object to ISO string for server-side parsing
+        publishDate: data.publishDate.toISOString(),
+      };
+      
       const response = await apiRequest("/api/news", {
         method: "POST",
-        body: JSON.stringify(data),
+        body: JSON.stringify(formattedData),
       });
       
       toast({
@@ -113,6 +120,7 @@ function NewsForm() {
       // Reset form
       form.reset();
     } catch (error) {
+      console.error("Error creating news:", error);
       toast({
         title: "Error",
         description: "Failed to create news article. Please try again.",
