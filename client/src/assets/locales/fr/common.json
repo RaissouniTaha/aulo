@@ -1,0 +1,85 @@
+{
+  "agencyName": "Agence Urbaine Gouvernementale",
+  "agencyTagline": "Site Officiel",
+  "navigation": "Navigation",
+
+  "header": {
+    "contactUs": "Contactez-nous",
+    "search": "Rechercher",
+    "searchPlaceholder": "Rechercher sur le site...",
+    "language": "Langue",
+    "login": "Connexion",
+    "myAccount": "Mon Compte",
+    "eServices": "E-Services",
+    "openMenu": "Ouvrir le Menu",
+    "closeMenu": "Fermer le Menu"
+  },
+
+  "footer": {
+    "quickLinks": "Liens Rapides",
+    "contactInfo": "Coordonnées",
+    "socialMedia": "Suivez-nous",
+    "newsletter": "Abonnez-vous à notre newsletter",
+    "newsletterPlaceholder": "Entrez votre email",
+    "subscribe": "S'abonner",
+    "copyright": "© 2023 Agence Urbaine Gouvernementale. Tous droits réservés.",
+    "termsOfUse": "Conditions d'utilisation",
+    "privacyPolicy": "Politique de confidentialité",
+    "accessibility": "Accessibilité",
+    "sitemap": "Plan du site",
+    "contactUs": "Contactez-nous",
+    "address": "123 Rue du Gouvernement, Ville Capitale, 10001",
+    "phoneNumber": "+1 (234) 567-8900",
+    "email": "contact@govagency.gov",
+    "workingHours": "Lun-Ven: 8h30 - 16h30"
+  },
+
+  "nav": {
+    "home": "Accueil",
+    "about": "À Propos",
+    "services": "Services",
+    "maps": "Cartes",
+    "documents": "Documents",
+    "news": "Actualités",
+    "contact": "Contact"
+  },
+
+  "about": {
+    "mission": "Notre Mission & Vision",
+    "leadership": "Direction",
+    "history": "Histoire",
+    "reports": "Rapports Annuels"
+  },
+
+  "services": {
+    "permits": "Permis de Construire",
+    "zoning": "Informations de Zonage",
+    "planning": "Planification Urbaine",
+    "inspection": "Services d'Inspection"
+  },
+
+  "home": {
+    "hero": {
+      "title": "Urbanisme pour des Communautés Durables",
+      "subtitle": "Construire de meilleures villes grâce à la planification stratégique, au contrôle du développement et aux initiatives urbaines durables"
+    },
+    "quickAccess": "Accès Rapide",
+    "latestNews": "Dernières Actualités",
+    "services": "Nos Services",
+    "viewAll": "Voir Tout"
+  },
+
+  "common": {
+    "loading": "Chargement...",
+    "tryAgain": "Réessayer",
+    "readMore": "Lire Plus",
+    "learnMore": "En Savoir Plus",
+    "submit": "Soumettre",
+    "cancel": "Annuler",
+    "search": "Rechercher",
+    "noResults": "Aucun résultat trouvé",
+    "back": "Retour",
+    "next": "Suivant",
+    "previous": "Précédent"
+  }
+}

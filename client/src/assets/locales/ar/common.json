@@ -1,0 +1,85 @@
+{
+  "agencyName": "وكالة التخطيط الحضري الحكومية",
+  "agencyTagline": "الموقع الرسمي",
+  "navigation": "التنقل",
+
+  "header": {
+    "contactUs": "اتصل بنا",
+    "search": "بحث",
+    "searchPlaceholder": "ابحث في الموقع...",
+    "language": "اللغة",
+    "login": "تسجيل الدخول",
+    "myAccount": "حسابي",
+    "eServices": "الخدمات الإلكترونية",
+    "openMenu": "فتح القائمة",
+    "closeMenu": "إغلاق القائمة"
+  },
+
+  "footer": {
+    "quickLinks": "روابط سريعة",
+    "contactInfo": "معلومات الاتصال",
+    "socialMedia": "تابعنا",
+    "newsletter": "اشترك في نشرتنا الإخبارية",
+    "newsletterPlaceholder": "أدخل بريدك الإلكتروني",
+    "subscribe": "اشترك",
+    "copyright": "© 2023 وكالة التخطيط الحضري الحكومية. جميع الحقوق محفوظة.",
+    "termsOfUse": "شروط الاستخدام",
+    "privacyPolicy": "سياسة الخصوصية",
+    "accessibility": "إمكانية الوصول",
+    "sitemap": "خريطة الموقع",
+    "contactUs": "اتصل بنا",
+    "address": "123 شارع الحكومة، العاصمة، 10001",
+    "phoneNumber": "+1 (234) 567-8900",
+    "email": "contact@govagency.gov",
+    "workingHours": "الإثنين-الجمعة: 8:30 صباحاً - 4:30 مساءً"
+  },
+
+  "nav": {
+    "home": "الرئيسية",
+    "about": "من نحن",
+    "services": "الخدمات",
+    "maps": "الخرائط",
+    "documents": "الوثائق",
+    "news": "الأخبار",
+    "contact": "اتصل بنا"
+  },
+
+  "about": {
+    "mission": "مهمتنا ورؤيتنا",
+    "leadership": "القيادة",
+    "history": "التاريخ",
+    "reports": "التقارير السنوية"
+  },
+
+  "services": {
+    "permits": "تصاريح البناء",
+    "zoning": "معلومات تقسيم المناطق",
+    "planning": "التخطيط الحضري",
+    "inspection": "خدمات التفتيش"
+  },
+
+  "home": {
+    "hero": {
+      "title": "التخطيط الحضري للمجتمعات المستدامة",
+      "subtitle": "بناء مدن أفضل من خلال التخطيط الاستراتيجي، ومراقبة التنمية، والمبادرات الحضرية المستدامة"
+    },
+    "quickAccess": "وصول سريع",
+    "latestNews": "أحدث الأخبار",
+    "services": "خدماتنا",
+    "viewAll": "عرض الكل"
+  },
+
+  "common": {
+    "loading": "جار التحميل...",
+    "tryAgain": "حاول مرة أخرى",
+    "readMore": "اقرأ المزيد",
+    "learnMore": "تعرف على المزيد",
+    "submit": "إرسال",
+    "cancel": "إلغاء",
+    "search": "بحث",
+    "noResults": "لم يتم العثور على نتائج",
+    "back": "رجوع",
+    "next": "التالي",
+    "previous": "السابق"
+  }
+}
