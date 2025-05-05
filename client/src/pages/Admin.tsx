@@ -592,9 +592,16 @@ function PageForm() {
   async function onSubmit(data: z.infer<typeof pageFormSchema>) {
     setIsSubmitting(true);
     try {
+      // Format dates for API submission
+      const formattedData = {
+        ...data,
+        // Convert Date objects to ISO strings for server-side parsing
+        publishedAt: data.publishedAt ? data.publishedAt.toISOString() : null,
+      };
+      
       const response = await apiRequest("/api/pages", {
         method: "POST",
-        body: JSON.stringify(data),
+        body: JSON.stringify(formattedData),
       });
       
       toast({
@@ -605,6 +612,7 @@ function PageForm() {
       // Reset form
       form.reset();
     } catch (error) {
+      console.error("Error creating page:", error);
       toast({
         title: "Error",
         description: "Failed to create page. Please try again.",
