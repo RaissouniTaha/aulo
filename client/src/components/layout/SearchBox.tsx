@@ -2,14 +2,16 @@ import React, { useState } from 'react';
 import { Search } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { useTranslation } from '@/lib/i18n';
 
 interface SearchBoxProps {
   onSearch: (term: string) => void;
   placeholder?: string;
 }
 
-const SearchBox: React.FC<SearchBoxProps> = ({ onSearch, placeholder = "Search..." }) => {
+const SearchBox: React.FC<SearchBoxProps> = ({ onSearch, placeholder }) => {
   const [searchTerm, setSearchTerm] = useState('');
+  const { t } = useTranslation();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -25,7 +27,7 @@ const SearchBox: React.FC<SearchBoxProps> = ({ onSearch, placeholder = "Search..
         <Input 
           type="search" 
           className="w-full pl-10 py-3 border border-gray-300 rounded-l-md focus:ring-2 focus:ring-primary focus:border-primary font-medium"
-          placeholder={placeholder}
+          placeholder={placeholder || t('header.searchPlaceholder')}
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
         />
@@ -34,7 +36,7 @@ const SearchBox: React.FC<SearchBoxProps> = ({ onSearch, placeholder = "Search..
         type="submit" 
         className="bg-primary hover:bg-primary-700 text-white font-medium py-3 px-6 rounded-r-md transition-colors"
       >
-        Search
+        {t('common.search')}
       </Button>
     </form>
   );

@@ -1,6 +1,6 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Search, Menu, X, Phone, Mail, ChevronDown } from 'lucide-react';
+import { Search, Menu, X, Phone, Mail } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { 
   NavigationMenu,
@@ -14,9 +14,11 @@ import SearchBox from './SearchBox';
 import LanguageSwitcher from './LanguageSwitcher';
 import MobileMenu from './MobileMenu';
 import logoSvg from '@/assets/icons/logo.svg';
+import { useTranslation } from '@/lib/i18n';
 
 const Header: React.FC = () => {
   const location = useLocation();
+  const { t } = useTranslation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
@@ -67,7 +69,7 @@ const Header: React.FC = () => {
   return (
     <header className={`w-full border-b border-gray-200 ${isSticky ? 'sticky top-0 shadow-md z-50 animate-slideDown' : ''}`}>
       <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:p-4 focus:bg-primary focus:text-white focus:z-50">
-        Skip to main content
+        {t('common.skipToContent')}
       </a>
       
       {/* Top Bar */}
@@ -77,11 +79,11 @@ const Header: React.FC = () => {
           <div className="flex items-center space-x-6">
             <div className="flex items-center">
               <Phone className="h-4 w-4 mr-2" />
-              <span className="hidden sm:inline text-sm">+1-234-567-8900</span>
+              <span className="hidden sm:inline text-sm">{t('footer.phoneNumber')}</span>
             </div>
             <div className="hidden md:flex items-center">
               <Mail className="h-4 w-4 mr-2" />
-              <span className="text-sm">contact@govagency.gov</span>
+              <span className="text-sm">{t('footer.email')}</span>
             </div>
           </div>
           
@@ -111,14 +113,14 @@ const Header: React.FC = () => {
             {/* Logo */}
             <Link to="/" className="flex items-center">
               <div className="h-12 w-12 flex items-center justify-center mr-3">
-                <img src={logoSvg} alt="Government Agency Logo" className="h-12 w-12" />
+                <img src={logoSvg} alt={t('agencyName')} className="h-12 w-12" />
               </div>
               <div className="ml-3 hidden sm:block">
                 <h1 className="text-xl font-bold text-gray-800">
-                  Government Agency
+                  {t('agencyName')}
                 </h1>
                 <p className="text-sm text-gray-600">
-                  Urban Planning Authority
+                  {t('agencyTagline')}
                 </p>
               </div>
             </Link>
@@ -131,31 +133,31 @@ const Header: React.FC = () => {
                     <NavigationMenuLink className={`px-1 py-2 font-medium hover:text-primary border-b-2 transition-colors duration-300 ${
                       isLinkActive('/') ? 'text-primary border-primary' : 'text-gray-800 border-transparent'
                     }`}>
-                      Home
+                      {t('nav.home')}
                     </NavigationMenuLink>
                   </Link>
                 </NavigationMenuItem>
                 
                 <NavigationMenuItem>
                   <NavigationMenuTrigger className={`font-medium ${isLinkActive('/about') ? 'text-primary' : 'text-gray-800'}`}>
-                    About Us
+                    {t('nav.about')}
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <div className="p-4 border-b border-gray-100">
-                      <h3 className="font-medium text-primary">About Our Agency</h3>
+                      <h3 className="font-medium text-primary">{t('nav.about')}</h3>
                     </div>
                     <div className="p-2 w-64">
                       <Link to="/about/mission" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-md">
-                        Our Mission & Vision
+                        {t('about.mission')}
                       </Link>
                       <Link to="/about/leadership" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-md">
-                        Leadership
+                        {t('about.leadership')}
                       </Link>
                       <Link to="/about/history" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-md">
-                        History
+                        {t('about.history')}
                       </Link>
                       <Link to="/about/reports" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-md">
-                        Annual Reports
+                        {t('about.reports')}
                       </Link>
                     </div>
                   </NavigationMenuContent>
@@ -163,24 +165,24 @@ const Header: React.FC = () => {
                 
                 <NavigationMenuItem>
                   <NavigationMenuTrigger className={`font-medium ${isLinkActive('/services') ? 'text-primary' : 'text-gray-800'}`}>
-                    Services
+                    {t('nav.services')}
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <div className="p-4 border-b border-gray-100">
-                      <h3 className="font-medium text-primary">Our Services</h3>
+                      <h3 className="font-medium text-primary">{t('home.services')}</h3>
                     </div>
                     <div className="p-2 w-64">
                       <Link to="/services/permits" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-md">
-                        Building Permits
+                        {t('services.permits')}
                       </Link>
                       <Link to="/services/zoning" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-md">
-                        Zoning Information
+                        {t('services.zoning')}
                       </Link>
                       <Link to="/services/planning" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-md">
-                        Urban Planning
+                        {t('services.planning')}
                       </Link>
                       <Link to="/services/inspection" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-md">
-                        Inspection Services
+                        {t('services.inspection')}
                       </Link>
                     </div>
                   </NavigationMenuContent>
@@ -191,7 +193,7 @@ const Header: React.FC = () => {
                     <NavigationMenuLink className={`px-1 py-2 font-medium hover:text-primary border-b-2 border-transparent hover:border-primary transition-colors duration-300 ${
                       isLinkActive('/maps') ? 'text-primary border-primary' : 'text-gray-800'
                     }`}>
-                      Maps
+                      {t('nav.maps')}
                     </NavigationMenuLink>
                   </Link>
                 </NavigationMenuItem>
@@ -201,7 +203,7 @@ const Header: React.FC = () => {
                     <NavigationMenuLink className={`px-1 py-2 font-medium hover:text-primary border-b-2 border-transparent hover:border-primary transition-colors duration-300 ${
                       isLinkActive('/documents') ? 'text-primary border-primary' : 'text-gray-800'
                     }`}>
-                      Documents
+                      {t('nav.documents')}
                     </NavigationMenuLink>
                   </Link>
                 </NavigationMenuItem>
@@ -211,7 +213,7 @@ const Header: React.FC = () => {
                     <NavigationMenuLink className={`px-1 py-2 font-medium hover:text-primary border-b-2 border-transparent hover:border-primary transition-colors duration-300 ${
                       isLinkActive('/news') ? 'text-primary border-primary' : 'text-gray-800'
                     }`}>
-                      News
+                      {t('nav.news')}
                     </NavigationMenuLink>
                   </Link>
                 </NavigationMenuItem>
@@ -221,7 +223,7 @@ const Header: React.FC = () => {
                     <NavigationMenuLink className={`px-1 py-2 font-medium hover:text-primary border-b-2 border-transparent hover:border-primary transition-colors duration-300 ${
                       isLinkActive('/contact') ? 'text-primary border-primary' : 'text-gray-800'
                     }`}>
-                      Contact
+                      {t('nav.contact')}
                     </NavigationMenuLink>
                   </Link>
                 </NavigationMenuItem>
@@ -235,7 +237,7 @@ const Header: React.FC = () => {
                 onClick={toggleSearch}
                 variant="ghost"
                 size="icon"
-                aria-label="Search"
+                aria-label={t('header.search')}
               >
                 <Search className="h-5 w-5" />
               </Button>
@@ -247,7 +249,7 @@ const Header: React.FC = () => {
                 size="icon"
                 onClick={toggleMobileMenu}
                 aria-expanded={mobileMenuOpen}
-                aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
+                aria-label={mobileMenuOpen ? t('header.closeMenu') : t('header.openMenu')}
               >
                 {mobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
               </Button>
@@ -262,7 +264,7 @@ const Header: React.FC = () => {
                   console.log("Searching for:", term);
                   setSearchOpen(false);
                 }}
-                placeholder="Search for services, documents, or information..."
+                placeholder={t('header.searchPlaceholder')}
               />
             </div>
           )}
