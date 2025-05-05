@@ -15,17 +15,17 @@
   --border: 20 5.9% 90%;
   --input: 20 5.9% 90%;
   
-  /* Primary colors - Government Agency Blue */
-  --primary: 207 100% 26%; /* #005288 */
-  --primary-foreground: 210 100% 98%;
+  /* Primary colors - Olive green from logo */
+  --primary: 82 70% 40%; /* #9bb12e - Olive Green */
+  --primary-foreground: 0 0% 100%;
   
-  /* Secondary colors */
-  --secondary: 204 100% 36%; /* #0073b7 */
-  --secondary-foreground: 210 100% 98%;
+  /* Secondary colors - Blue from logo */
+  --secondary: 199 100% 45%; /* #00a1e4 - Mediterranean Blue */
+  --secondary-foreground: 0 0% 100%;
   
-  /* Accent colors */
-  --accent: 355 78% 57%; /* #e63946 */
-  --accent-foreground: 0 0% 100%;
+  /* Accent colors - Tan/gold from logo */
+  --accent: 42 85% 65%; /* #e0b94e - Desert Tan */
+  --accent-foreground: 0 0% 15%;
   
   /* Other UI colors */
   --destructive: 0 84.2% 60.2%;
