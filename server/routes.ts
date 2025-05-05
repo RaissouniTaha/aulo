@@ -2,7 +2,7 @@ import type { Express, Request, Response } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { z } from "zod";
-import { insertContactSchema } from "@shared/schema";
+import { insertContactSchema, insertNewsSchema, insertServiceSchema, insertDocumentSchema, insertPageSchema, insertMapDataSchema } from "@shared/schema";
 
 export async function registerRoutes(app: Express): Promise<Server> {
   // Create server
@@ -113,6 +113,76 @@ export async function registerRoutes(app: Express): Promise<Server> {
         return res.status(400).json({ message: "Validation error", errors: error.errors });
       }
       res.status(500).json({ message: "Error submitting contact form" });
+    }
+  });
+
+  // Create news item
+  app.post("/api/news", async (req: Request, res: Response) => {
+    try {
+      const validatedData = insertNewsSchema.parse(req.body);
+      const newsItem = await storage.createNews(validatedData);
+      res.status(201).json({ message: "News item created successfully", id: newsItem.id });
+    } catch (error) {
+      if (error instanceof z.ZodError) {
+        return res.status(400).json({ message: "Validation error", errors: error.errors });
+      }
+      res.status(500).json({ message: "Error creating news item" });
+    }
+  });
+
+  // Create service
+  app.post("/api/services", async (req: Request, res: Response) => {
+    try {
+      const validatedData = insertServiceSchema.parse(req.body);
+      const service = await storage.createService(validatedData);
+      res.status(201).json({ message: "Service created successfully", id: service.id });
+    } catch (error) {
+      if (error instanceof z.ZodError) {
+        return res.status(400).json({ message: "Validation error", errors: error.errors });
+      }
+      res.status(500).json({ message: "Error creating service" });
+    }
+  });
+
+  // Create document
+  app.post("/api/documents", async (req: Request, res: Response) => {
+    try {
+      const validatedData = insertDocumentSchema.parse(req.body);
+      const document = await storage.createDocument(validatedData);
+      res.status(201).json({ message: "Document created successfully", id: document.id });
+    } catch (error) {
+      if (error instanceof z.ZodError) {
+        return res.status(400).json({ message: "Validation error", errors: error.errors });
+      }
+      res.status(500).json({ message: "Error creating document" });
+    }
+  });
+
+  // Create page
+  app.post("/api/pages", async (req: Request, res: Response) => {
+    try {
+      const validatedData = insertPageSchema.parse(req.body);
+      const page = await storage.createPage(validatedData);
+      res.status(201).json({ message: "Page created successfully", id: page.id });
+    } catch (error) {
+      if (error instanceof z.ZodError) {
+        return res.status(400).json({ message: "Validation error", errors: error.errors });
+      }
+      res.status(500).json({ message: "Error creating page" });
+    }
+  });
+
+  // Create map data
+  app.post("/api/map-data", async (req: Request, res: Response) => {
+    try {
+      const validatedData = insertMapDataSchema.parse(req.body);
+      const mapDataItem = await storage.createMapData(validatedData);
+      res.status(201).json({ message: "Map data created successfully", id: mapDataItem.id });
+    } catch (error) {
+      if (error instanceof z.ZodError) {
+        return res.status(400).json({ message: "Validation error", errors: error.errors });
+      }
+      res.status(500).json({ message: "Error creating map data" });
     }
   });
 

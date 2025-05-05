@@ -13,6 +13,7 @@ const Maps = lazy(() => import("@/pages/Maps"));
 const Documents = lazy(() => import("@/pages/Documents"));
 const News = lazy(() => import("@/pages/News"));
 const Contact = lazy(() => import("@/pages/Contact"));
+const Admin = lazy(() => import("@/pages/Admin"));
 const NotFound = lazy(() => import("@/pages/not-found"));
 
 // Loading component
@@ -41,6 +42,7 @@ function App() {
             <Route path="/documents" element={<Documents />} />
             <Route path="/news/*" element={<News />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/admin" element={<Admin />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>
